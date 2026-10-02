@@ -224,7 +224,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
   },
   {
     id: 'ibm-classification',
-    title: 'IBM Data Classification & Governance',
+    title: 'IBM Data Classification',
     category: 'Technical Credential',
     issuer: 'IBM',
     year: '2024',
