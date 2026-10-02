@@ -142,11 +142,11 @@ export default function Hero() {
    * ========================================================
    *
    * File:
-   * public/CV_Maria Theresia.pdf
+   * public/CV_Maria_Theresia.pdf
    *
-   * Karena ada spasi pada nama file, URL menggunakan %20.
+   * Nama file harus sama persis dengan yang ada di folder public.
    */
-  const cvUrl = '/CV_Maria%20Theresia.pdf';
+  const cvUrl = '/CV_Maria_Theresia.pdf';
 
   useEffect(() => {
     const m = window.matchMedia('(min-width: 1024px)');
@@ -225,6 +225,12 @@ export default function Hero() {
 
       if (!response.ok) {
         throw new Error(`Unable to load CV. HTTP ${response.status}`);
+      }
+
+      // Cegah menyimpan index.html (SPA fallback) sebagai PDF
+      const contentType = response.headers.get('content-type') || '';
+      if (contentType.includes('text/html')) {
+        throw new Error('CV file not found (server returned HTML).');
       }
 
       const blob = await response.blob();
@@ -322,6 +328,8 @@ export default function Hero() {
         className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full"
         style={{
           minHeight: desktop ? 540 : undefined,
+          // Jarak antara hero dan section About (juga memberi ruang untuk teks "drag the badge")
+          paddingBottom: desktop ? 96 : 0,
         }}
       >
         <div
@@ -340,8 +348,10 @@ export default function Hero() {
             animate="show"
             className="relative lg:col-span-6 flex flex-col items-start"
             style={{
-              gap: 20,
-              paddingTop: desktop ? 16 : 0,
+              gap: 16,
+              // Navbar fixed (~112px) → dorong konten kiri turun agar tidak tertimpa.
+              // Section tetap lg:pt-0 supaya tali lanyard di kanan menggantung dari atas.
+              paddingTop: desktop ? 120 : 0,
             }}
           >
             {/* Garis tren data */}
@@ -437,7 +447,7 @@ export default function Hero() {
                 variants={item}
                 style={{
                   fontFamily: DISPLAY,
-                  fontSize: 'clamp(3rem, 6.5vw, 5.5rem)',
+                  fontSize: 'clamp(3rem, 6vw, 5rem)',
                   fontWeight: 700,
                   letterSpacing: '-0.035em',
                   lineHeight: 1,
@@ -661,7 +671,7 @@ export default function Hero() {
               <div
                 style={{
                   position: 'absolute',
-                  top: 85,
+                  top: 195,
                   left: 'calc(50% + 160px)',
                   display: 'flex',
                   flexDirection: 'column',
@@ -824,7 +834,7 @@ export default function Hero() {
               desktop
                 ? {
                     position: 'absolute',
-                    top: -130,
+                    top: -20,
                     bottom: 0,
                     left: '44%',
                     width: '44%',
