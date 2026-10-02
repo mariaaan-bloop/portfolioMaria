@@ -213,7 +213,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
   },
   {
     id: 'coursera-ba',
-    title: 'Coursera Business Analyst Professional Credential',
+    title: 'Coursera Business Analysis & Process Management Credential',
     category: 'Professional Certification',
     issuer: 'Coursera Verified',
     year: '2024',
