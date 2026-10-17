@@ -183,7 +183,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     title: 'Samsung Innovation Campus — Python Programming Completion',
     category: 'Technical Certification',
     issuer: 'Samsung Innovation Campus',
-    year: '2024',
+    year: '2025',
     description:
       'Rigorous certification verifying core Python programming, algorithm analysis, mathematical problem-solving, and foundational analytics application.',
     highlight: 'Data Science & Algorithm Core',
@@ -216,7 +216,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     title: 'Coursera Business Analysis & Process Management Credential',
     category: 'Professional Certification',
     issuer: 'Coursera Verified',
-    year: '2024',
+    year: '2026',
     description:
       'Verified coursework in business requirements analysis, process modeling, stakeholder communication, and analytical problem-solving.',
     highlight: 'Business Requirements & Modeling',
@@ -227,7 +227,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     title: 'IBM Data Classification',
     category: 'Technical Credential',
     issuer: 'IBM',
-    year: '2024',
+    year: '2026',
     description:
       'Certified understanding of enterprise data categorization, data protection policies, and compliance architectures.',
     highlight: 'Data Governance & Hygiene',
@@ -238,7 +238,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     title: 'IBM Agile Explorer Credential',
     category: 'Methodology Certification',
     issuer: 'IBM',
-    year: '2024',
+    year: '2026',
     description:
       'Verified expertise in Agile scrum frameworks, sprint backlog tracking, and iterative cross-functional development cycles.',
     highlight: 'Agile Delivery & Scrum Operations',
@@ -249,7 +249,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     title: 'ICPC Competitive Programming Achievement',
     category: 'Competitive Programming',
     issuer: 'ICPC International',
-    year: '2024',
+    year: '2025',
     description:
       'Recognized competitive programming achievement in algorithmic speed, data structure optimization, and complex logic resolution.',
     highlight: 'Algorithmic Problem-Solving',
@@ -260,7 +260,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     title: 'Beelingua English Language Proficiency Certificate',
     category: 'Language Credential',
     issuer: 'Beelingua',
-    year: '2024',
+    year: '2025',
     description:
       'Certified advanced English fluency for cross-border professional communication, technical documentation, and presentation.',
     highlight: 'Professional English Proficiency',
