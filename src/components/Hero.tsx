@@ -456,7 +456,18 @@ export default function Hero() {
               >
                 Maria Theresia
               </motion.h1>
-
+<motion.p
+  variants={item}
+  className="text-[#E9C7D4] font-semibold"
+  style={{
+    fontFamily: DISPLAY,
+    fontSize: 'clamp(1.5rem, 3vw, 2.5rem)',
+    lineHeight: 1.2,
+    letterSpacing: '-0.02em',
+  }}
+>
+  Data Analyst
+</motion.p>
               {/* Role */}
               <motion.div
                 variants={item}
